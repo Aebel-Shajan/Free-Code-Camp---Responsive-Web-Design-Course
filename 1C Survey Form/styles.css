@@ -1,9 +1,64 @@
 body {
-    margin: 0 10%;
-}
-
-#text-stuff > label {
+    background: #bb3e00;
+    color: #fff1d7;
+    font-family: Lucida Console;
+  }
+  
+  h1, p {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  form {
+    
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60%
+  }
+  
+  label {
     display: block;
     margin: 0.5rem 0;
-}
-
+  }
+  
+  input {
+    width: 100%
+  }
+  
+  fieldset {
+    margin: 20px 0;
+  }
+  
+  fieldset > label {
+    display: inline;
+    vertical-align: middle;
+    
+  }
+  
+  
+  
+  input,
+  textarea,
+  select {
+    margin: 0px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  }
+  
+  input[type="submit"] {
+      display: block;
+      width: 60%;
+      margin: 1em auto;
+      height: 2em;
+      font-size: 1.1rem;
+      background-color: #f7ad45;
+      border-color: #fff1d7;
+      color: #fff1d7;
+      min-width: 300px;
+    }
+  fieldset > input {
+    width: unset;
+    min-height: unset;
+    vertical-align: middle;
+  }
