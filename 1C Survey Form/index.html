@@ -3,45 +3,46 @@
 <html lang="en">
   <head>
     <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <h1 id="title">Survey Form</h1>
     <p id="description">Fill out this form for free pizza</p>
     <form id="survey-form">
-      <label for="name" id="name-label">Enter your name</label>
-      <input id="name" type="text" placeholder="Enter name" required> <br>
-      <label for="email" id="email-label">Enter your email</label>
-      <input id="email" type="email" placeholder="Enter email" required><br>
-      <label for="number" id="number-label">How many pizzas you want?</label>
-      <input id="number" type="number" placeholder="Enter" min=0 max=10 required> <br>
-    <label for="dropdown"> Where you at? </label>
-    <select name="location" id="dropdown">
-      <option value="Manchester">Manchester</option>
-      <option value="Wigan">Wigan</option>
-      <option value="Bolton">Bolton</option>
-      <option value="Bury">Bury</option>
-    </select>
-    <fieldset>
-      <legend>What size?</legend>
-      <input name="size" type="radio" value="10" id="10" checked><label for="10">10"</label>
-      <input name="size" type="radio" value="12" id="12" ><label for="12">12"</label>
-      <input name="size" type="radio" value="14" id="14" ><label for="14">14"</label>
-      <input name="size" type="radio" value="16" id="16" ><label for="16">16"</label>
-      <input name="size" type="radio" value="18" id="18" ><label for="18">18"</label>
-    </fieldset>
-    <fieldset>
-      <legend>What toppings?</legend>
-      <input name="toppings" type="checkbox" value="cheese" id="cheese" checked><label for="cheese">Cheese</label>
-      <input name="toppings" type="checkbox" value="pepperoni" id="pepperoni"><label for="pepperoni">Pepperoni</label>
-      <input name="toppings" type="checkbox" value="peppers" id="peppers"><label for="peppers">Peppers</label>
-      <input name="toppings" type="checkbox" value="beef" id="beef"><label for="beef">Beef</label>
-      <input name="toppings" type="checkbox" value="chicken" id="chicken"><label for="chicken">Chicken</label>
-    </fieldset>
+      <fieldset id="text-stuff">
+        <label for="name" id="name-label">Enter your name <input id="name" type="text" placeholder="Enter name" required> </label>
+        <label for="email" id="email-label">Enter your email <input id="email" type="email" placeholder="Enter email" required> </label>
+        <label for="number" id="number-label">How many pizzas you want? <input id="number" type="number" placeholder="Enter" min=0 max=10 required> </label>
+        <label for="dropdown"> Where you at? 
+          <select name="location" id="dropdown">
+            <option value="Manchester">Manchester</option>
+            <option value="Wigan">Wigan</option>
+            <option value="Bolton">Bolton</option>
+            <option value="Bury">Bury</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>What size?</legend>
+        <input name="size" type="radio" value="10" id="10" checked><label for="10">10"</label>
+        <input name="size" type="radio" value="12" id="12" ><label for="12">12"</label>
+        <input name="size" type="radio" value="14" id="14" ><label for="14">14"</label>
+        <input name="size" type="radio" value="16" id="16" ><label for="16">16"</label>
+        <input name="size" type="radio" value="18" id="18" ><label for="18">18"</label>
+      </fieldset>
+      <fieldset>
+        <legend>What toppings?</legend>
+        <input name="toppings" type="checkbox" value="cheese" id="cheese" checked><label for="cheese">Cheese</label>
+        <input name="toppings" type="checkbox" value="pepperoni" id="pepperoni"><label for="pepperoni">Pepperoni</label>
+        <input name="toppings" type="checkbox" value="peppers" id="peppers"><label for="peppers">Peppers</label>
+        <input name="toppings" type="checkbox" value="beef" id="beef"><label for="beef">Beef</label>
+        <input name="toppings" type="checkbox" value="chicken" id="chicken"><label for="chicken">Chicken</label>
+      </fieldset>
 
-    <textarea>
+      <textarea>
 
-    </textarea>
-    <button type="submit" id="submit">Submit</submit>
+      </textarea>
+      <button type="submit" id="submit">Submit</submit>
 
     </form>
   </body>

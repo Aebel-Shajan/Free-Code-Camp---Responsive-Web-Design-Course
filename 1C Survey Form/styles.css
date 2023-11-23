@@ -1,0 +1,9 @@
+body {
+    margin: 0 10%;
+}
+
+#text-stuff > label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
