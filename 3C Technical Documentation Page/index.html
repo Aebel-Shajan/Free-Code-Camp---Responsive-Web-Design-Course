@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+    <title>CSS Basics Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>CSS Basics Documentation</header>
+        <a class="nav-link" href="#Introduction_to_CSS">Introduction to CSS</a>
+        <a class="nav-link" href="#Selectors_and_Properties">Selectors and Properties</a>
+        <a class="nav-link" href="#Layout_Techniques">Layout Techniques</a>
+        <a class="nav-link" href="#Styling_Text_and_Fonts">Styling Text and Fonts</a>
+        <a class="nav-link" href="#Responsive_Design">Responsive Design</a>
+        <a class="nav-link" href="#References">References</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction_to_CSS">
+            <header>Introduction to CSS</header>
+            <p>CSS (Cascading Style Sheets) is a cornerstone technology used 
+                alongside HTML and JavaScript in web development. It's the tool 
+                that gives web designers and developers the power to create 
+                visually engaging and stylistically unique web pages.</p>
+            
+                <h3>1. The Role of CSS in Web Development:</h3>
+                <p>CSS is primarily used to control the layout and appearance of web content. While HTML structures the content, CSS styles it. This includes everything from fonts and colors to spacing and layout. By keeping content (HTML) and presentation (CSS) separate, web pages become more accessible, easier to manage, and faster to load.</p>
+
+                <h3>2. Basic Syntax of CSS:</h3>
+                <p>A CSS rule consists of a selector and a declaration block:</p>
+                <code>selector {
+                    property: value;
+                }
+                </code>
+                <p>The selector points to the HTML element you want to style. The declaration block contains one or more declarations separated by semicolons. Each declaration includes a CSS property (what you want to change) and a value (how you want to change it).</p>
+
+                <h3>3. Simple Example:</h3>
+                <p>Here's some basic example of CSS in action: </p>
+                <code>p {
+                        color: red;
+                        font-size: 16px;
+                        }
+                </code>
+                <p>This CSS code will style all p elements to have red text and a font size of 16 pixels.</p>
+
+                <h3>4. The 'Cascading' in CSS:</h3>
+                <p>CSS is called "Cascading" because of how styles are applied. Styles can be defined in multiple stylesheets or within the HTML file itself, and they cascade down, meaning that the last read style will override previous ones if they conflict. This feature allows for a great deal of flexibility in styling web pages.</p>
+
+                <h3>5. Importance of Learning CSS:</h3>
+                <p>Understanding CSS is crucial for anyone looking to create or maintain web pages. It not only allows for the aesthetic customization of web content but also plays a key role in web accessibility and responsive design, which are vital in today’s diverse range of internet devices.
+                By the end of this guide, you'll have a solid foundation in CSS, equipped to create visually appealing and functionally robust web pages. Stay tuned for the next section where we'll delve deeper into selectors and properties, the building blocks of CSS.</p>
+        </section>
+        <section class="main-section" id="Selectors_and_Properties">
+            <header>Selectors and Properties</header>
+            <p>In CSS, the magic happens through the use of selectors and properties. This section dives into these fundamental concepts, helping you understand how to effectively apply styles to your web content.</p>
+
+            <h3>1. Understanding Selectors:</h3>
+            <p>
+                Selectors are patterns used to select the elements you want to style. The most common types are:
+            </p>
+            <ul>
+                <li>Element Selector: Targets an HTML element directly (e.g., p, div).</li>
+                <li>Class Selector: Targets elements with a specific class attribute (e.g., .classname).</li>
+                <li>ID Selector: Targets an element with a specific ID attribute (e.g., #idname).</li>
+            </ul>
+            <p>Selectors can be combined and more complex selectors can be created for more specific targeting.</p>
+
+            <h3>2. CSS Properties:</h3>
+            <p>Properties are what you want to style in an element. They fall into various categories like layout (e.g., width, margin), typography (e.g., font-size, color), and decoration (e.g., background-color, border). A property is followed by a colon and a value, ending with a semicolon.</p>
+
+            <h3>3. An Example of CSS Rule:</h3>
+            <code>
+                .myclass {
+                    color: blue;
+                    font-size: 14px;
+                  }
+            </code>
+            
+            <h3>4. The Concept of Specificity:</h3>
+            <p>Specificity determines which style is applied when there is a conflict. It's based on the type of selector with ID selectors having the highest specificity, followed by class selectors, and then element selectors. By mastering selectors and properties, you can begin to effectively style and customize your web pages. The next section will explore the intricacies of CSS layout techniques, including positioning and Flexbox.</p>
+
+        </section>
+        <section class="main-section" id="Layout_Techniques">
+            <header>Layout Techniques</header>
+            <p>This section focuses on CSS layout techniques, emphasizing positioning elements and using Flexbox, a powerful tool for creating responsive layouts.</p>
+
+            <h3>1. Understanding the CSS Box Model:</h3>
+            <p>Every element on a web page is considered a box, consisting of margins, borders, padding, and the content itself. Understanding this model is crucial for arranging elements on the page.</p>
+
+            <h3>2. Positioning Elements: </h3>
+            <p>CSS offers several ways to position elements:</p>
+            <ul>
+                <li>Static: The default position of elements.</li>
+                <li>Relative: Positioned relative to its normal position.</li>
+                <li>Absolute: Positioned relative to its nearest positioned ancestor.</li>
+                <li>Fixed: Positioned relative to the browser window.</li>
+            </ul>
+            <p>These properties help in placing elements exactly where you want them on the page.</p>
+            
+            <h3>3. Introduction to Flexbox:</h3>
+            <p>Flexbox is a layout model that allows easy alignment and distribution of space among items in a container, even when their size is unknown. The main components are:</p>
+            <ul>
+                <li>Flex Container: The parent element that holds flex items.</li>
+                <li>Flex Items: The children elements within the flex container.</li>
+            </ul>
+            <p>Flexbox makes it simpler to design flexible responsive layout structures without using floats or positioning.</p>
+            
+            <h3>4. Simple Flexbox Example:</h3>
+            <code>
+                .container {
+                    display: flex;
+                    justify-content: space-between;
+                  }
+            </code>
+            <p>This will evenly space the flex items in the container.</p>
+            <p>Understanding these layout principles is key to creating structured and adaptable web designs. Next, we'll explore how to enhance text and fonts to add visual appeal to your content.</p>
+
+        </section>
+        <section class="main-section" id="Styling_Text_and_Fonts">
+            <header>Styling Text and Fonts</header>
+            <p>Effective typography is vital for user-friendly web design. This section covers the basics of styling text and fonts in CSS.</p>
+
+            <h3>1. Font Properties:</h3>
+            <p>Utilize properties like font-family to set the typeface, font-size for size, font-weight for boldness, and font-style for italics. Example: font-family: Arial, sans-serif; font-size: 16px;</p>
+
+            <h3>2. Text Alignment and Spacing:</h3>
+            <p>Adjust text alignment using text-align and manage the vertical space between lines with line-height. Example: text-align: center; line-height: 1.5;</p>
+
+            <h3>3. Text Decoration:</h3>
+            <p>Use text-decoration to add or remove underlines, overlines, or line-throughs. Example: text-decoration: underline;</p>
+
+            <h3>4. Web Fonts:</h3>
+            <p>Incorporate custom fonts using @font-face or services like Google Fonts for a wider range of typographic styles.</p>
+
+            <p>Mastering these typography tools enhances the readability and aesthetic of your web pages. The final section will discuss the essentials of responsive design with media queries.</p>
+        </section>
+        <section class="main-section" id="Responsive_Design">
+            <header>Responsive Design</header>
+            <p>Responsive design is key to ensuring websites look great on all devices. This section introduces media queries and the mobile-first approach in CSS.</p>
+
+            <h3>1. Media Queries:</h3>
+            <p>Media queries allow CSS to apply styles based on device characteristics, like screen size or resolution. Syntax: @media (max-width: 600px) { /* CSS rules for screens smaller than 600px */ } This changes the layout and style for different screen sizes, ensuring a consistent user experience.</p>
+
+            <h3>2. Mobile-First Design:</h3>
+            <p>Start with styling for smaller screens and then use media queries to add or modify styles for larger screens. This approach prioritizes performance and user experience on mobile devices, increasingly important in today`s web.</p>
+
+            <h3>3. Example of a Responsive Design:</h3>
+            <code>body { font-size: 14px; }
+                    @media (min-width: 600px) { body { font-size: 16px; } }
+            </code>
+
+            <p>Understanding responsive design and effectively using media queries are essential skills for modern web development. This completes our basic guide to CSS, equipping you with the knowledge to create visually appealing, responsive websites.</p>
+        </section>
+        <section class="main-section" id="References">
+            <header>References</header>
+            <p>Sources and Inspiration:</p>
+            <ol>
+                <li><a href="https://www.w3schools.com/css/">W3Schools</a>: A primary resource for learning web technologies online, providing comprehensive tutorials on HTML, CSS, and JavaScript.</li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs (Mozilla)</a>: Known for its in-depth and reliable documentation on web standards, including CSS.</li>
+                <li><a href="https://css-tricks.com/">CSS-Tricks</a>: A popular website offering tips, tricks, and insights into CSS, often used by both beginners and experienced developers.</li>
+            </ol>
+        </section>
+
+    </main>
+</body>
+</html>
