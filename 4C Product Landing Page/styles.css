@@ -81,7 +81,7 @@ p {
     margin: 20px;
 }
 
-#prices {
+#Prices {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -131,7 +131,7 @@ p {
 }
 
 @media (max-width: 800px) {
-    #prices{
+    #Prices{
       flex-direction: column;
     }
     .product {
