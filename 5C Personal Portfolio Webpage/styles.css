@@ -1,6 +1,5 @@
 * {
     font-family: 'Poppins', sans-serif;
-    line-height: 1rem;
     box-sizing: border-box;
     --main-white: #fafaff;
     --main-black: #22333b;
@@ -8,9 +7,11 @@
     scroll-behavior: smooth;
 }
 
+
 body {
     margin: 0;
     background-color: var(--main-white);
+    font-size: 2vh;
 }
 
 .nav {
@@ -19,73 +20,132 @@ body {
     left: 0;
     display: flex;
     flex-direction: row;
-    height: 5rem;
+    height: 5em;
     background-color: var(--main-black);
     width: 100vw;
+
 }
 
 .nav-list {
     width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /*layout*/
     display: flex;
     flex-direction: row;
-    list-style: none;
-    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-black);
 }
 
 .nav-list a {
-    display: block;
-    padding: 2rem;
-    text-decoration: none;
+    padding: 2em 1.5em;
     color: var(--main-white);
 }
+
 
 .nav-list a:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-section {
+#welcome-section {
     height: 100vh;
-    margin: 0;
-}
-
-#about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: xx-large;
+    font-size: 2em;
 }
 
-#about p {
+#welcome-section p {
     font-style: italic;
 }
 
+section {
+    padding: 2em;
+    padding-top: 6em;
+}
+
+hr {
+    color: var(--main-black);
+}
 
 #projects {
     background-color: var(--main-grey);
-    padding: 2rem;
-    padding-top: 5rem;
 }
 
 .projects-grid {
-    display: flex;
-    flex-wrap: wrap;
-    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
     width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 3rem;
 }
 
 .project-tile {
     background-color: var(--main-white);
-    padding: 1rem;
 }
 
 .project-tile > img {
     object-fit: cover;
     width: 100%;
+    height: 10rem;
 }
 
+.project-description {
+    padding: 1rem;
+    font-size: medium;
+}
 
+#cv {
+    height: 100vh;
+}
+
+.pdf {
+    height: fit-content;
+}
 
 #contact {
     background-color: var(--main-grey);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: var(--main-black);
+    color: var(--main-white);
+    min-height: 100vh;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.contact-details{
+    font-size: 2rem;
+    color: var(--main-white);
+    padding: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 1.2vh;
+    }
+
+    .nav-list a {
+        font-size: 1.4vh;
+    }
 }
