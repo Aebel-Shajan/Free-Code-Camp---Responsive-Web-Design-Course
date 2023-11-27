@@ -64,13 +64,14 @@ section {
 #projects {
     background-color: var(--main-grey);
     padding: 2rem;
+    padding-top: 5rem;
 }
 
 .projects-grid {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     height: 80vh;
     width: 100%;
-    grid-gap: 3rem;
 }
 
 .project-tile {
@@ -80,7 +81,6 @@ section {
 
 .project-tile > img {
     object-fit: cover;
-    
     width: 100%;
 }
 
